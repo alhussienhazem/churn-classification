@@ -11,6 +11,7 @@ This notebook develops machine learning models to predict customer churn, using 
 - [⚙️ Methods](#%EF%B8%8F-methods)
 - [📊 Results](#-results)
 - [📝 Project Details](#-project-details)
+- [📜 License](#-License)
 
 ---
 
@@ -82,7 +83,7 @@ jupyter notebook
 - If a dataset is included, it should be placed in the `data/` folder  
   
 ---
-## 📄 License
+## 📜 License
 
 This project is for educational and non-commercial use only.  
 The dataset used is the publicly available IBM Telco Customer Churn dataset.  
