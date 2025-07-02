@@ -1,6 +1,6 @@
 # 🔮 Customer Churn Classification
 
-This notebook develops machine learning models to predict customer churn, using SMOTE (Synthetic Minority Oversampling Technique) to address class imbalance and improve churner detection.
+This notebook builds machine learning models to predict customer churn, applying SMOTE (Synthetic Minority Oversampling Technique) to address class imbalance and improve the detection of churned customers.
 
 ---
 
@@ -86,5 +86,5 @@ jupyter notebook
 ## 📜 License
 
 This project is for educational and non-commercial use only.  
-The dataset used is the publicly available IBM Telco Customer Churn dataset.  
-
+The dataset used is the publicly available IBM Telco Customer Churn dataset, available here:  
+[https://www.ibm.com/communities/analytics/watson-analytics-blog/guide-to-sample-datasets/](https://www.ibm.com/communities/analytics/watson-analytics-blog/guide-to-sample-datasets/)
