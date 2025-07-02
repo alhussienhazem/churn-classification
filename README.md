@@ -6,12 +6,36 @@ This notebook develops models to predict customer churn, using SMOTE (Synthetic 
 
 ## 📚 Table of Contents
 
+- [Installation](#-installation)
 - [Models Used](#-models-used)
 - [Why Balance the Data?](#️-why-balance-the-data)
 - [Results Summary](#-results-summary)
 - [How to Run](#-how-to-run)
 
 ---
+
+## 🚀 Installation
+
+To set up the project locally, follow these steps:
+
+```bash
+# Clone the repository
+git clone https://github.com/alhussienhazem/churn-classification.git
+
+# Navigate to the project folder
+cd churn-classification
+
+# (Recommended) create a virtual environment
+python -m venv venv
+source venv/bin/activate  # on Linux/Mac
+venv\Scripts\activate     # on Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the notebook
+jupyter notebook
+```
 
 ## 🚀 Models Used
 
