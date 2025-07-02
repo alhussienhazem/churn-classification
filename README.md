@@ -1,22 +1,24 @@
 # 🔮 Customer Churn Classification
 
-This notebook develops models to predict customer churn, using SMOTE (Synthetic Minority Oversampling Technique) to handle class imbalance and improve detection of churners.
+**Workshop Homework Submission**
+
+This notebook develops machine learning models to predict customer churn, using SMOTE (Synthetic Minority Oversampling Technique) to address class imbalance and improve churner detection.
 
 ---
 
 ## 📚 Table of Contents
 
-- [Installation](#-installation)
-- [Models Used](#-models-used)
-- [Why Balance the Data?]#️-why-balance-the-data)
-- [Results Summary](#-results-summary)
-- [How to Run](#-how-to-run)
+- [🚀 Installation](#-installation)
+- [🎯 Project Goals](#-project-goals)
+- [⚙️ Methods](#-methods)
+- [📊 Results](#-results)
+- [📝 Submission Notes](#-submission-notes)
 
 ---
 
 ## 🚀 Installation
 
-To set up the project locally, follow these steps:
+- **Requirements:** Python 3.8+, Jupyter Notebook
 
 ```bash
 # Clone the repository
@@ -25,7 +27,7 @@ git clone https://github.com/alhussienhazem/churn-classification.git
 # Navigate to the project folder
 cd churn-classification
 
-# (Recommended) create a virtual environment
+# (optional) create a virtual environment
 python -m venv venv
 source venv/bin/activate  # on Linux/Mac
 venv\Scripts\activate     # on Windows
@@ -36,45 +38,52 @@ pip install -r requirements.txt
 # Run the notebook
 jupyter notebook
 ```
+---
 
-## 🚀 Models Used
+## 🎯 Project Goals
 
-- Logistic Regression
-- Support Vector Machine (SVM)
-- K-Nearest Neighbors (KNN)
+- **Objective:** Predict customer churn with high recall, prioritizing identifying true churners.
+- **Challenge:** Imbalanced data with far fewer churn samples than non-churn samples.
+- **Solution:** Apply SMOTE to oversample the minority class in training data, boosting the ability to detect churners.
 
 ---
 
-## ⚖️ Why Balance the Data?
+## ⚙️ Methods
 
-In churn data, most customers do **not** churn, making the dataset imbalanced.  
-Without balancing, models tend to ignore the churn class.  
+- **Models Used:**
+  - Logistic Regression
+  - Support Vector Machine (SVM)
+  - K-Nearest Neighbors (KNN)
 
-SMOTE was applied to create synthetic churn examples in the training data, improving the model’s recall on churners.
-
----
-
-## 📊 Results Summary (with SMOTE)
-
-| Model | Accuracy | Churn Precision | Churn Recall | Churn F1-score |
-|-------|----------|-----------------|--------------|----------------|
-| **Logistic Regression** | 75.2% | 0.47 | 0.78 | 0.59 |
-| **SVM**                 | 76.5% | 0.49 | 0.74 | 0.59 |
-| **KNN**                 | 69%   | 0.41 | 0.76 | 0.53 |
+- **Techniques Applied:**
+  - SMOTE to balance classes
+  - MinMax scaling for feature normalization
+  - Evaluation with precision, recall, F1-score (not just accuracy)
+  - Confusion matrices for visualization
 
 ---
 
-These results prioritize catching churners (high recall) over purely maximizing accuracy, which better serves the business goal of customer retention.
+## 📊 Results
+
+| Model                | Accuracy | Churn Precision | Churn Recall | Churn F1-score |
+|----------------------|----------|-----------------|--------------|----------------|
+| Logistic Regression  | 75.2%    | 0.47            | 0.78         | 0.59           |
+| SVM                  | 76.5%    | 0.49            | 0.74         | 0.59           |
+| KNN                  | 69%      | 0.41            | 0.76         | 0.53           |
+
+- **Key Insight:**
+  - All models achieved over 74% recall on churners, which is essential for a retention-driven business.
+  - Among them, SVM showed the best balanced accuracy.
 
 ---
 
-## 📝 How to Run
+## 📝 Submission Notes
 
-1. Clone this repository  
-2. Open the `.ipynb` notebook  
-3. Run the cells in sequence  
-4. Modify hyperparameters or test other balancing techniques if you want to explore further
-
+- Notebook cells are cleaned, ordered, and reproducible
+- `requirements.txt` included for environment setup
+- Dataset assumed to be placed in a `data/` folder (if public)
+- Notebook submitted as part of workshop coursework
+  
 ---
-
 > *Notebook submitted as coursework.*
+
