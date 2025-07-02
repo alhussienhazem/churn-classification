@@ -10,7 +10,7 @@ This notebook develops machine learning models to predict customer churn, using 
 - [🎯 Project Goals](#-project-goals)
 - [⚙️ Methods](#-methods)
 - [📊 Results](#-results)
-- [📝 Submission Notes](#-submission-notes)
+- [📝 Project Details](#-project-details)
 
 ---
 
