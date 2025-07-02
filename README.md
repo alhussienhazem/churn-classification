@@ -4,6 +4,15 @@ This notebook develops models to predict customer churn, using SMOTE (Synthetic 
 
 ---
 
+## 📚 Table of Contents
+
+- [Models Used](#-models-used)
+- [Why Balance the Data?](#️-why-balance-the-data)
+- [Results Summary](#-results-summary)
+- [How to Run](#-how-to-run)
+
+---
+
 ## 🚀 Models Used
 
 - Logistic Regression
@@ -21,19 +30,15 @@ SMOTE was applied to create synthetic churn examples in the training data, impro
 
 ---
 
-## 📊 Results Summary
+## 📊 Results Summary (with SMOTE)
 
-After balancing and tuning:
+| Model | Accuracy | Churn Precision | Churn Recall | Churn F1-score |
+|-------|----------|-----------------|--------------|----------------|
+| **Logistic Regression** | 75.2% | 0.47 | 0.78 | 0.59 |
+| **SVM**                 | 76.5% | 0.49 | 0.74 | 0.59 |
+| **KNN**                 | 69%   | 0.41 | 0.76 | 0.53 |
 
-✅ Logistic Regression  
-- Recall: **80%** on churners  
-- Reasonable precision  
-
-✅ SVM (C=0.5, RBF kernel)  
-- Recall: **74%** on churners  
-
-✅ KNN (9 neighbors, uniform weighting)  
-- Recall: **76%** on churners  
+---
 
 These results prioritize catching churners (high recall) over purely maximizing accuracy, which better serves the business goal of customer retention.
 
@@ -48,4 +53,4 @@ These results prioritize catching churners (high recall) over purely maximizing 
 
 ---
 
-*Notebook submitted as coursework.*
+> *Notebook submitted as coursework.*
