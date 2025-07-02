@@ -86,5 +86,5 @@ jupyter notebook
 ## 📜 License
 
 This project is for educational and non-commercial use only.  
-The dataset used is the publicly available IBM Telco Customer Churn dataset, available here:  
-[https://www.ibm.com/communities/analytics/watson-analytics-blog/guide-to-sample-datasets/](https://www.ibm.com/communities/analytics/watson-analytics-blog/guide-to-sample-datasets/)
+The dataset used is the publicly available IBM Telco Customer Churn dataset, also hosted on Kaggle here:  
+[https://www.kaggle.com/datasets/blastchar/telco-customer-churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
