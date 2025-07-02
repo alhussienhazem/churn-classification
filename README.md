@@ -1,7 +1,5 @@
 # 🔮 Customer Churn Classification
 
-**Workshop Homework Submission**
-
 This notebook develops machine learning models to predict customer churn, using SMOTE (Synthetic Minority Oversampling Technique) to address class imbalance and improve churner detection.
 
 ---
@@ -77,12 +75,11 @@ jupyter notebook
 
 ---
 
-## 📝 Submission Notes
+## 📝 Project Details
 
-- Notebook cells are cleaned, ordered, and reproducible
-- `requirements.txt` included for environment setup
-- Dataset assumed to be placed in a `data/` folder (if public)
-- Notebook submitted as part of workshop coursework
+- All notebook cells are clean, ordered, and fully reproducible  
+- Dependencies are listed in `requirements.txt` for quick setup  
+- If a dataset is included, it should be placed in the `data/` folder  
   
 ---
 > *Notebook submitted as coursework.*
