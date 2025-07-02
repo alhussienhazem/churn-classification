@@ -82,5 +82,8 @@ jupyter notebook
 - If a dataset is included, it should be placed in the `data/` folder  
   
 ---
-> *Notebook submitted as coursework.*
+## 📄 License
+
+This project is for educational and non-commercial use only.  
+The dataset used is the publicly available IBM Telco Customer Churn dataset.  
 
